@@ -39,8 +39,8 @@ Morales: I added the class Student with it´s attributes and getters.
 Briefly explain:
 
 - What was implemented.
-- How the work was divided.
-- Which Git operations were used.
+- Morales create the challenge mian challenge branch, changed the name to the file, and added tha base class and elements to use, 
+- Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
 - Which conflicts appeared.
 - How the conflicts were resolved.
 
