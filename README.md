@@ -91,9 +91,9 @@ Briefly explain:
 
 Briefly explain:
 
-- What was implemented.
-- How the work was divided.
-- Which Git operations were used.
+- Morales: As student A, I implement Function, Collectors, Stream, Function to create a functional interface for the function that I pass to solve the builder case, Collectors to convert the final stream into a String again with the joining with spaces, and Stream to pass the String to a Stream and operate over each element or in this case to repeat again all tha String 3 times, taking all the String as an element.
+- Morales take the Student A role.
+- Morales: checkout, add ., commit, push origin.
 - Which conflicts appeared.
 - How the conflicts were resolved.
 
