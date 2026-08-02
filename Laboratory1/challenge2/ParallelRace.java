@@ -9,7 +9,9 @@ public class ParallelRace {
             int min,
             int total,
             boolean max_multiple_of_two,
-            boolean min_divisible_by_two
+            boolean min_divisible_by_two,
+            boolean size_even,
+            boolean size_odd
     ) {}
 
     // Only resolves the stats of a single list
@@ -25,12 +27,14 @@ public class ParallelRace {
         boolean max_multiple_of_two = max % 2 == 0? true: false;
 
         boolean min_divisible_by_two = min % 2 == 0? true: false;
+        boolean size_even = total % 2 == 0;
+        boolean size_odd = total % 2 != 0;
 
-        return new SingleListStats(max, min, total, max_multiple_of_two, min_divisible_by_two);
+        return new SingleListStats(max, min, total, max_multiple_of_two, min_divisible_by_two, size_even, size_odd);
     };
 
     public static void main(String[] args){
-        List<Integer> nums1 = List.of(32,25,2,5252,5,25,25,25,27,654,7421,86);
+        List<Integer> nums1 = List.of(32,25,2,5252,25,25,25,27,654,7421,88888,1);
         List<Integer> nums2 = List.of(2,5,2,64,6436,8,-6,9964,0,9589,9,653,98765);
 
         SingleListStats ans = singleSolver.apply(nums1);
@@ -41,6 +45,8 @@ public class ParallelRace {
         System.out.println("Total: " + String.valueOf(ans.total()));
         System.out.println("IsMaxMulOfTwo: " + String.valueOf(ans.max_multiple_of_two()));
         System.out.println("IsMinDivByTwo: " + String.valueOf(ans.min_divisible_by_two()));
+        System.out.println("IsSizeEven: " + ans.size_even());
+        System.out.println("IsSizeOdd: " + ans.size_odd());
 
         System.out.println("\n");
 
@@ -49,6 +55,8 @@ public class ParallelRace {
         System.out.println("Min: " + "PUT HERE");
         System.out.println("Total: " + "PUT HERE");
         System.out.println("IsMaxMulOfTwo: " + "PUT HERE");
+        System.out.println("IsMinDivByTwo: " + "PUT HERE");
         System.out.println("IsSizeEven: " + "PUT HERE");
+        System.out.println("IsSizeOdd: " + "PUT HERE");
     }
 }
