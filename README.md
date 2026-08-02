@@ -107,3 +107,40 @@ Briefly explain:
 - Which Git operations were used.
 - Which conflicts appeared.
 - How the conflicts were resolved.
+
+
+# Part 3 - Conceptual Questionnaire
+
+## 1. Team agreements
+
+- **What times will you meet?**  
+  From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
+
+- **What will your communication channels be?**  
+  We will use Microsoft Teams for meetings and WhatsApp for communication.
+
+- **How often will you meet?**  
+  At least three days a week, from Monday to Friday.
+
+- **If a conflict were to arise, how could you resolve it?**  
+  Since there are three members in our group, decisions will be made democratically.
+
+## 2. What is the difference between git merge and git rebase?
+
+GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
+
+GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
+
+## 3. What happens when two branches modify the same line of a file?
+
+Git will detect a merge conflict. The developer must choose which changes to keep or combine before completing the merge.
+
+## 4. How can you display the branch and merge history graphically in the terminal?
+
+Using the following command:
+
+```bash
+git log --graph --oneline --all
+```
+
+

@@ -1,23 +1,21 @@
+import java.util.List;
+import java.util.function.Function;
+
 public class ParallelRace {
 
-    public static void main(String[] args){
-        List<Integer> nums1 = List.of(32,25,2,5252,5,25,25,25,27,654,7421,86);
-        List<Integer> nums2 = List.of(2,5,2,64,6436,8,-6,9964,0,9589,9,653,98765);
+    // Lane One
+    // Receives a list of numbers and returns the largest number
+    public static Function<List<Integer>, Integer> getMax = numbers ->
+            numbers.stream()
+                    .max(Integer::compareTo)
+                    .orElse(Integer.MIN_VALUE);
 
-        System.out.println("List 1 stats:");
-        System.out.println("Max: " + "PUT HERE");
-        System.out.println("Min: " + "PUT HERE");
-        System.out.println("Total: " + "PUT HERE");
-        System.out.println("IsMaxMulOfTwo: " + "PUT HERE");
-        System.out.println("IsSizeEven: " + "PUT HERE");
+    public static void main(String[] args) {
 
-        System.out.println("\n");
+        List<Integer> numbers = List.of(32, 25, 2, 5252, 5, 25, 27, 654, 7421, 86);
 
-        System.out.println("List 2 stats:");
-        System.out.println("Max: " + "PUT HERE");
-        System.out.println("Min: " + "PUT HERE");
-        System.out.println("Total: " + "PUT HERE");
-        System.out.println("IsMaxMulOfTwo: " + "PUT HERE");
-        System.out.println("IsSizeEven: " + "PUT HERE");
+        int max = getMax.apply(numbers);
+
+        System.out.println("Maximum value: " + max);
     }
 }
