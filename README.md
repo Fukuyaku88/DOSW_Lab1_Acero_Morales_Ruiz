@@ -39,9 +39,18 @@ Morales: I added the class Student with it´s attributes and getters.
 Briefly explain:
 
 - What was implemented.
-- Morales create the challenge mian challenge branch, changed the name to the file, and added tha base class and elements to use, 
-- Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
+  - Morales create the challenge mian challenge branch, changed the name to the file, and added tha base class and elements to use, 
+  - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
+  - Miguel: I implemented the Lane Two when lamda-based function
+        returns the smallest and total size.
+- How the work was divided.
+  - Daniel Ruiz was Lane One, Miguel Acero was Lane Two and Daniel Morales
+    created the base and tests class.
+- Which Git operations were used.
+  - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
+    (to upodate all cloude branches).
 - Which conflicts appeared.
+  - 
 - How the conflicts were resolved.
 
 ## Challenge 3 — Mysterious Echo
