@@ -18,13 +18,9 @@ Briefly explain:
 
 - What was implemented. $\newline$ Ruiz: I created the test class, named it, and committed it.
 Morales: I added the class Student with it´s attributes and getters.
-
 - How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members, Ruiz with the Challenge1 class, Morales with the Student class, and Acero with the class WelcomeMessage class.
-
 - Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command, Morales: I used checkout, add ., commit, push, pull origin and merge.
-
 - Which conflicts appeared.
-
 - How the conflicts were resolved.
 
 
@@ -32,7 +28,9 @@ Morales: I added the class Student with it´s attributes and getters.
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Acero evidence:
+![Challenge evidence](images/A_4_challenge2.png)
+![Challenge evidence](images/A_5_challenge2.png)
 
 ### Description
 
@@ -50,8 +48,10 @@ Briefly explain:
   - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
     (to upodate all cloude branches).
 - Which conflicts appeared.
-  - 
+  - Miguel: CONFLICT (content): Merge conflict in Laboratory1/challenge2/ParallelRace.java when content
+    between laneOne and laneTwo crash in the same function (same name, different content)
 - How the conflicts were resolved.
+  - Miguel: Only just necessary merge manually changes into the same function.
 
 ## Challenge 3 — Mysterious Echo
 
