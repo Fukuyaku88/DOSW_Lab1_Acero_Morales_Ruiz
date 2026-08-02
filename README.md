@@ -37,14 +37,15 @@ Miguel Acero evidence:
 Briefly explain:
 
 - What was implemented.
-  - Morales create the challenge mian challenge branch, changed the name to the file, and added tha base class and elements to use, 
-  - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
+  - Morales create the challenge main challenge branch, changed the name to the file, and added tha base class and elements to use.
   - Miguel: I implemented the Lane Two when lamda-based function
         returns the smallest and total size.
+  - Morales: Added the second lap to the challenge 2, and correct the output to show the final answer just for one list.
 - How the work was divided.
-  - Daniel Ruiz was Lane One, Miguel Acero was Lane Two and Daniel Morales
-    created the base and tests class.
+  - Daniel Ruiz was Lane One, Miguel Acero was Lane Two and Daniel Morales created the base and tests class.
+  - Morales: Added all the second lap and also the correct output.
 - Which Git operations were used.
+  - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
   - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
     (to upodate all cloude branches).
 - Which conflicts appeared.
