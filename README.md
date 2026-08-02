@@ -22,8 +22,19 @@ Edgar Daniel Ruiz Patiño
 ## Challenge 1 — Welcome Message
 
 ### Evidence
+Ruiz Daniel evidence:
 
-![Challenge evidence](images/challengeN.png)
+![Challenge evidence](images/R_2_Challenge1.png)
+
+Morales Daniel evidence:
+
+![Challenge evidence](images/M_4_Challenge%201.0.png)
+![Challenge evidence](images/M_5_Challenge%201.1.png)
+
+Miguel Acero evidence:
+![Challenge evidence](images/A_1_challenge1.png)
+![Challenge evidence](images/A_2_challenge1.png)
+![Challenge evidence](images/A_3_challenge1.png)
 
 ### Description
 We had to create a structure message showing basic information
@@ -32,14 +43,27 @@ semester and institutional email.
 On the other hand, was necesary create our own
 locally branch to work, for then upload in GitHub and
 merge with develop.
+Create a welcome message using Java functional programming.
 
 Briefly explain:
 
-- What was implemented.
-- How the work was divided.
-- Which Git operations were used.
+- What was implemented. 
+1. Ruiz: I created the test class, named it, and committed it.
+2. Morales: I added the class Student with it´s attributes and getters.
+3. Miguel: I created the WelcomeMessage class with it's readme evidence and resolve the conflicts
+- How the work was divided. 
+$\newline$ There are 3 classes, one for each of one of the team members, Ruiz with the Challenge1 class, Morales with the Student class, and Acero with the class WelcomeMessage class.
+- Which Git operations were used. 
+1. Ruiz: I used the add . and commit command, also i used the push command. 
+2. Morales: I used checkout, add ., commit, push, pull origin and merge.
+3. Miguel: I used the same commands of my partners.
 - Which conflicts appeared.
+1. Miguel: Appeared conflict like CONFLICT (content) because one class
+was created into principal class changing content of the class into my branch-.
 - How the conflicts were resolved.
+1. Miguel: I needed to move manually the class into the principle class and 
+cut it to copy outside of principle class. Finally code worked and upload to 
+develop branch.
 
 ## Challenge 2 — Parallel Commit Raise
 
