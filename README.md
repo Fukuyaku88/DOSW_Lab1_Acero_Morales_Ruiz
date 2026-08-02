@@ -8,6 +8,10 @@
 RUIZ DANIEL evidence:
 ![Challenge evidence](images/R_2_Challenge1.png)
 
+Morales Daniel evidence:
+![Challenge evidence](images/M_4_Challenge%201.0.png)
+![Challenge evidence](images/M_5_Challenge%201.1.png)
+
 Create a welcome message using Java functional programming.
 
 Briefly explain:
