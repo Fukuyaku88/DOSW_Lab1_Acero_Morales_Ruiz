@@ -73,15 +73,21 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+![Challenge evidence](images/A_6_challenge4.png)
 
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Miguel: I implemented a method (like Student A) that receives key-value
+      pairs of type (String, Integer), stores them in a HashMap, ignores duplicate 
+      keys and preserves the first value found.
 - How the work was divided.
+  - Miguel was the Student A proving hashMap characteristics
 - Which Git operations were used.
+  - Miguel: I used typical commands to give changes from cloud like pull origin, 
+    ckeckout -b to create my personal challenge 4 branch, git push origin.
 - Which conflicts appeared.
 - How the conflicts were resolved.
 
