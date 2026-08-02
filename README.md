@@ -13,10 +13,16 @@ Create a welcome message using Java functional programming.
 Briefly explain:
 
 - What was implemented. $\newline$ Ruiz: I created the test class, named it, and committed it.
-- How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members.
-- Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command.
+Morales: I added the class Student with it´s attributes and getters.
+
+- How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members, Ruiz with the Challenge1 class, Morales with the Student class, and Acero with the class WelcomeMessage class.
+
+- Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command, Morales: I used checkout, add ., commit, push, pull origin and merge.
+
 - Which conflicts appeared.
+
 - How the conflicts were resolved.
+
 
 ## Challenge 2 — Parallel Commit Raise
 
