@@ -5,18 +5,22 @@ public class ParallelRace {
 
     // Container (easier that create the object gets and constructors) java v14
     public record SingleListStats(
+            int max,
             int min,
             int total
     ) {}
 
     // Only resolves the stats of a single list
     public static Function<List<Integer>, SingleListStats> singleSolver = numbers -> {
+        int max = numbers.stream()
+                .max(Integer::compareTo)
+                .orElse(Integer.MIN_VALUE);
         int min = numbers.stream()
                 .min(Integer::compareTo)
                 .orElse(Integer.MAX_VALUE); // Or 0
         int total = numbers.size();
 
-        return new SingleListStats(min, total);
+        return new SingleListStats(max, min, total);
     };
 
     public static void main(String[] args){
