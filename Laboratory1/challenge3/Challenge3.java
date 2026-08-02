@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 
 public class Challenge3 {
 
-    public static Function<String, String> string_builder = str -> {
+    public static Function<String, String> mysteriousEcho = str -> {
 
         StringBuilder builder = new StringBuilder();
 
@@ -17,8 +17,8 @@ public class Challenge3 {
     };
 
     public static void main(String[] args) {
-        String str = "Hello World and cats";
+        String str = "Hello World";
 
-        System.out.println(string_builder.apply(str.trim()));
+        System.out.println(mysteriousEcho.apply(str.trim()));
     }
 }

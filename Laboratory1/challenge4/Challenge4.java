@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Challenge4{
+public class Challenge4 {
 
     public static HashMap<String, Integer> treasureDuplicateKeysHmap (List<Map.Entry<String, Integer>> entries){
         if(entries == null) return new HashMap<>();
@@ -46,6 +46,12 @@ public class Challenge4{
     }
 
     public static void main(String[] args){
+
+        List<Map.Entry<String, Integer>> listOfPairs = List.of(
+                Map.entry("Apple", 10),
+                Map.entry("Banana", 20),
+                Map.entry("Apple", 50) // Clave duplicada
+        );
 
         Map<String, Integer> hashMap = new HashMap<>();
         hashMap.put("gold", 12);
