@@ -5,16 +5,16 @@
 ## Challenge 1 — Welcome Message
 
 ### Evidence
+RUIZ DANIEL evidence:
+![Challenge evidence](images/R_2_Challenge1.png)
 
-![Challenge evidence](images/challengeN.png)
-
-### Description
+Create a welcome message using Java functional programming.
 
 Briefly explain:
 
-- What was implemented.
-- How the work was divided.
-- Which Git operations were used.
+- What was implemented. $\newline$ Ruiz: I created the test class, named it, and committed it.
+- How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members.
+- Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command.
 - Which conflicts appeared.
 - How the conflicts were resolved.
 
