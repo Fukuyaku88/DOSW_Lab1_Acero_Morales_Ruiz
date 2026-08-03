@@ -144,13 +144,16 @@ Briefly explain:
   - Miguel: I implemented the executeCommandsA method of challenge 6.
     In my case, we needed to create commands using switch statement.
   - Morales: I implemented the executeCommandsB method of challenge 6, for that reason I use the lambda expressions inside a Map<String, Runnable>, to execute it according to the Key or in this case command.
+  - Morales: I complete the merge goal, so finally I doesn´t have to implement something new.
 - How the work was divided.
   - Miguel created the Student A commands using switch statement and
     printed the first fourth commands (simple way, invoking method).
   - Morales: I implemented the executeCommandsB method of challenge 6, and also make a little improve to take input commands, and answer according to it, this to test the challenge several times.
+  - Morales: I complete the merge goal, so I decide that the Student B method was the more appropiate to make an based command program, because for switch we have to put more lines just to put a base command, otherwise with Map and lambda expressions, we just need to add a new value and key to the map.
 - Which Git operations were used.
   - Miguel: I used some like ckeckout -b ..., pull origin, add ., push,
     branch, status.
   - Morales: ckeckout, pull origin, add ., commit, push, merge.
 - Which conflicts appeared.
+
 - How the conflicts were resolved.

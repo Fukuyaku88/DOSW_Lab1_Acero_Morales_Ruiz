@@ -1,12 +1,12 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Challenge6 {
 
-    //Student A version
+    private static final Map<String, Runnable> actions = new HashMap<>();
+
+    //Student A version, cause this is the final implementation this method is not used anymore, but it has been left here for professor review.
     private static void executeCommandA(String command) {
         switch (command) {
             case "GREET":
@@ -24,7 +24,7 @@ public class Challenge6 {
         }
     }
 
-    //Student B Version
+    //Student B Version, in the final implementation, this one is totally used.
     private static void executeCommandB(String command, Map<String,Runnable> actions) {
         Runnable response = actions.get(command);
         response.run();
@@ -32,13 +32,14 @@ public class Challenge6 {
 
     public static void main(String[] args) {
 
-        Map<String, Runnable> actions = new HashMap<>(); //Map that contains the Student B commands, is here because it is 
+        actions.put("GREET", () -> System.out.println("Greetings, traveler of time and code!"));
+        actions.put("FAREWELL", () -> System.out.println("May the bits be with you until the next mission."));
+        actions.put("SING", () -> System.out.println("01010101"));
+        actions.put("DANCE", () -> System.out.println("Spinning in party mode."));
         actions.put("JOKE", () -> System.out.println("Why did the RAM break up with the CPU? It needed space."));
         actions.put("SHOUT", () -> System.out.println("STACK OVERFLOW ALERT!"));
         actions.put("WHISPER", () -> System.out.println("Shhh... the bugs are sleeping."));
         actions.put("ANALYZE", () -> System.out.println("Processing data... result: You are amazing at programming!"));
-
-        ArrayList<String> commandsA = new ArrayList<>(Arrays.asList("GREET", "FAREWELL", "SING", "DANCE"));
 
         Scanner scan = new Scanner(System.in);
 
@@ -47,13 +48,13 @@ public class Challenge6 {
 
             String command = scan.nextLine().trim();
 
-            if (command.equals("EXIT")) {
+            if (command.equalsIgnoreCase("EXIT")) {
                 break;
-            }
-            if (commandsA.contains(command)) {
-                executeCommandA(command);
+            } else if (command.isEmpty()) {
+                System.out.println("Enter a correct command.");
             } else {
-                executeCommandB(command,actions);
+                executeCommandB(command, actions); /*Here can be a try catch to catch the error when the command is not correct, 
+                but I think that this is enough. */
             }
         }
 
