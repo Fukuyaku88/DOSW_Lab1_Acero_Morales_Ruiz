@@ -72,8 +72,9 @@ Briefly explain:
 ## Challenge 4 — The Treasure of Duplicate Keys
 
 ### Evidence
-
-![Challenge evidence](images/A_6_challenge4.png)
+Ruiz Daniel evidence: $\newline$
+- HashTable
+![Challenge evidence](images/R_7_challenge_4_Hashtable.png)
 
 ### Description
 
@@ -83,8 +84,10 @@ Briefly explain:
   - Miguel: I implemented a method (like Student A) that receives key-value
       pairs of type (String, Integer), stores them in a HashMap, ignores duplicate 
       keys and preserves the first value found.
+  - Daniel Ruiz: I created the HashMap and added the elements to it-
 - How the work was divided.
   - Miguel was the Student A proving hashMap characteristics
+  - Daniel Ruiz was the Student B, creating the HashMap
 - Which Git operations were used.
   - Miguel: I used typical commands to give changes from cloud like pull origin, 
     ckeckout -b to create my personal challenge 4 branch, git push origin.
