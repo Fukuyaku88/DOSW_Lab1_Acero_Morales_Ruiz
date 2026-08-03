@@ -47,6 +47,10 @@ Create a welcome message using Java functional programming.
 
 Briefly explain:
 
+- What was implemented. $\newline$ Ruiz: I created the test class, named it, and committed it.
+Morales: I added the class Student with it´s attributes and getters.
+- How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members, Ruiz with the Challenge1 class, Morales with the Student class, and Acero with the class WelcomeMessage class.
+- Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command, Morales: I used checkout, add ., commit, push, pull origin and merge.
 - What was implemented. 
 1. Ruiz: I created the test class, named it, and committed it.
 2. Morales: I added the class Student with it´s attributes and getters.
@@ -69,17 +73,37 @@ develop branch.
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Acero evidence:
+![Challenge evidence](images/A_4_challenge2.png)
+![Challenge evidence](images/A_5_challenge2.png)
+![Challenge evidence](images/A_8_challenge2.png)
+![Challenge evidence](images/A_9_challenge2.png)
 
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Morales create the challenge main challenge branch, changed the name to the file, and added tha base class and elements to use.
+  - Miguel: I implemented the Lane Two when lamda-based function, returns the smallest and total size.
+  - Morales: Added the second lap to the challenge 2, and correct the output to show the final answer just for one list.
+  - Miguel: I created a single function that receives two list of numbers adn returns a 
+    Results object containing. For this reason, my last work here was review and integrate the final solution
+    with Results container and bothLists BiFunction.
 - How the work was divided.
+  - Acero: Lane Two, fix first collision.
+  - Morales: Created the base and tests class, Added all the second lap and also the correct output.
+  - Ruiz: Lane One, Third lab
 - Which Git operations were used.
+  - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
+  - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
+    (to upodate all cloude branches).
+  - Miguel: To merge with develop branch I used: ckeckout, pull origin, merge, add ., commit.
 - Which conflicts appeared.
+  - Miguel: CONFLICT (content): Merge conflict in Laboratory1/challenge2/ParallelRace.java when content
+    between laneOne and laneTwo crash in the same function (same name, different content)
 - How the conflicts were resolved.
+  - Miguel: Only just necessary merge manually changes into the same function.
 
 ## Challenge 3 — Mysterious Echo
 
@@ -152,20 +176,16 @@ Briefly explain:
 
 - **What times will you meet?**  
   From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
-
 - **What will your communication channels be?**  
   We will use Microsoft Teams for meetings and WhatsApp for communication.
-
 - **How often will you meet?**  
   At least three days a week, from Monday to Friday.
-
 - **If a conflict were to arise, how could you resolve it?**  
   Since there are three members in our group, decisions will be made democratically.
 
 ## 2. What is the difference between git merge and git rebase?
 
 GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
-
 GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
 
 ## 3. What happens when two branches modify the same line of a file?
@@ -175,7 +195,7 @@ Git will detect a merge conflict. The developer must choose which changes to kee
 ## 4. How can you display the branch and merge history graphically in the terminal?
 
 Using the following command:
-
-```bash
 git log --graph --oneline --all
-```
+
+
+
