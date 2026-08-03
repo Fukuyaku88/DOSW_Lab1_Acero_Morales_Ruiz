@@ -167,9 +167,9 @@ Briefly explain:
     ckeckout -b to create my personal challenge 4 branch, git push origin.
   - Morales: I used checkout, pull origin, add ., commit, push and merge.
 - Which conflicts appeared.
-  - Morales: 
+  - Morales: Conflicts, with challenge 1, challenge 2, challenge 5 and challenge 6, and as always with README.md.
 - How the conflicts were resolved.
-  - Morales: 
+  - Morales: Accepted current version of challenge 1, 2, 5 and 6 in develop, because that ones was complete, and in README.md accepted current changes in develop.
 
 ## Challenge 5 — Battle of Sets
 
