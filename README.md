@@ -157,45 +157,27 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Angel Acero Laverde
+![Challenge evidence](images/A_7_challenge6.png)
 
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Miguel: I implemented the executeCommandsA method of challenge 6.
+    In my case, we needed to create commands using switch statement.
+  - Morales: I implemented the executeCommandsB method of challenge 6, for that reason I use the lambda expressions inside a Map<String, Runnable>, to execute it according to the Key or in this case command.
+  - Morales: I complete the merge goal, so finally I doesn´t have to implement something new.
 - How the work was divided.
+  - Miguel created the Student A commands using switch statement and
+    printed the first fourth commands (simple way, invoking method).
+  - Morales: I implemented the executeCommandsB method of challenge 6, and also make a little improve to take input commands, and answer according to it, this to test the challenge several times.
+  - Morales: I complete the merge goal, so I decide that the Student B method was the more appropiate to make an based command program, because for switch we have to put more lines just to put a base command, otherwise with Map and lambda expressions, we just need to add a new value and key to the map.
 - Which Git operations were used.
+  - Miguel: I used some like ckeckout -b ..., pull origin, add ., push,
+    branch, status.
+  - Morales: ckeckout, pull origin, add ., commit, push, merge.
 - Which conflicts appeared.
+
 - How the conflicts were resolved.
-
-
-# Part 3 - Conceptual Questionnaire
-
-## 1. Team agreements
-
-- **What times will you meet?**  
-  From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
-- **What will your communication channels be?**  
-  We will use Microsoft Teams for meetings and WhatsApp for communication.
-- **How often will you meet?**  
-  At least three days a week, from Monday to Friday.
-- **If a conflict were to arise, how could you resolve it?**  
-  Since there are three members in our group, decisions will be made democratically.
-
-## 2. What is the difference between git merge and git rebase?
-
-GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
-GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
-
-## 3. What happens when two branches modify the same line of a file?
-
-Git will detect a merge conflict. The developer must choose which changes to keep or combine before completing the merge.
-
-## 4. How can you display the branch and merge history graphically in the terminal?
-
-Using the following command:
-git log --graph --oneline --all
-
-
-
