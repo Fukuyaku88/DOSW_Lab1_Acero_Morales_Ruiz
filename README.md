@@ -205,3 +205,22 @@ git log --graph --oneline --all
 - Collectors.toMap() provides a clean, declarative way to transform stream elements directly into a Map. 
 - Compared to traditional loops, it integrates seamlessly with stream operations (like .filter() and .map()), 
   reduces boilerplate code, and provides built-in merge functions (v1, v2) -> ... to easily handle duplicate key collisions.
+
+## 9. When using stream().map() on a list of objects, what type of operation is being performed?
+- It performs an operation of transformation over the elements of the list, for each element it applies the specified lambda function in map() argument, this function has to return a value with the same type of the value that is transforming, and finally, returns a new stream with the elements transformed by map.
+
+## 10. What does stream().filter() do, and what does it return?
+- Similar to the point 9, it performs an operation of evaluation over the elements of the list, for each element it applies the specified lambda function in filter() argument, where the expression inside the lambda function is boolean, if the expression is true, that element goes to the new stream that is finally returned, if not, the element is ignored and is not included in the new Stream, finally return the new stream with the elements filtered.
+
+## 11. Describe the steps required to create a new feature branch from develop.
+- Step 1 Switch to develop branch: git checkout develop
+- Step 2 Check the status of the branch: git status
+- Step 3 Update the develop branch if the status is not correct: git pull origin develop
+- Step 4 Create the new branch: git checkout -b nameofthebranch
+- Step 5 Push the new branch to the cloud: git push -u origin nameofthebranch
+
+## 12. What is the difference between git branch and git checkout -b?
+- "git branch -b nameofthebranch" creates a new branch but doesn´t move you to it, "git branch" list all the local branchs, "git checkout nameofthebranch" moves you to that branch, "git checkout -b nameofthebranch" create the branch and also moves you to that branch, "git checkout hashofthecommit -- nameofthefile" restores a file back into the specified commit, in a summary, git branch is usefull for list the current branchs and create a new branch without moving to it, and git checkout is usefull to move between branchs, create and move to new branchs, and manage files and branchs between commits.
+
+## 13. Why should new functionality be developed in feature/* branches instead of directly in main?
+- The main branch is used for stable, verified and totally functional versions of the project, which one that can be used by users with the security that has complete features and a less rate of bugs, while develop is used for review, testing, verify and join all the features and upgrades for the new version, and finally feature is used for developer teams or a developer that is focused in a specfic and unique feature, and is necessary to have an historial of that feature, to make a review or verification of that feature before it reaches develop, and is a workspace separated from others features.
