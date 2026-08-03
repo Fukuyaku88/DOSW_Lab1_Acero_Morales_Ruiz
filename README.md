@@ -32,6 +32,7 @@ Miguel Acero evidence:
 ![Challenge evidence](images/A_4_challenge2.png)
 ![Challenge evidence](images/A_5_challenge2.png)
 ![Challenge evidence](images/A_8_challenge2.png)
+![Challenge evidence](images/A_9_challenge2.png)
 
 ### Description
 
