@@ -160,6 +160,9 @@ Briefly explain:
 Miguel Angel Acero Laverde
 ![Challenge evidence](images/A_7_challenge6.png)
 
+Daniel Santiago Morales Perdomo
+![Merge evidence 1](images/M_6_challenge6_Evidence1.png)
+![Merge evidence 2](images/M_6_challenge6_Evidence2.png)
 ### Description
 
 Briefly explain:
@@ -179,5 +182,7 @@ Briefly explain:
     branch, status.
   - Morales: ckeckout, pull origin, add ., commit, push, merge.
 - Which conflicts appeared.
-
+ Morales: There was a conflict in README.md, because Miguel deleted a part where someone added the questionnaire answers, and the PararellRace.java (challenge 2 file) because my the main challenge 6 branch, has the challenge 2 file empty, and in develop it was complete.
 - How the conflicts were resolved.
+
+Morales: For README.md I just accept the change to erase the answer of the questionnaire, and for the challenge 2 file, I just accept the change of add all the complete challenge.
