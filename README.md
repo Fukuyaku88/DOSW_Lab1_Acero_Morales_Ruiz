@@ -85,14 +85,19 @@ Briefly explain:
       pairs of type (String, Integer), stores them in a HashMap, ignores duplicate 
       keys and preserves the first value found.
   - Daniel Ruiz: I created the HashMap and added the elements to it-
+  - Morales: I implement the merge goal, so in my case I doesn´t implement nothing new, but fix the main function to be according to the output requirements, and also added the merge answer.
 - How the work was divided.
   - Miguel was the Student A proving hashMap characteristics
   - Daniel Ruiz was the Student B, creating the HashMap
+  - Morales: Implement the merge goal.
 - Which Git operations were used.
   - Miguel: I used typical commands to give changes from cloud like pull origin, 
     ckeckout -b to create my personal challenge 4 branch, git push origin.
+  - Morales: I used checkout, pull origin, add ., commit, push and merge.
 - Which conflicts appeared.
+  - Morales: 
 - How the conflicts were resolved.
+  - Morales: 
 
 ## Challenge 5 — Battle of Sets
 
