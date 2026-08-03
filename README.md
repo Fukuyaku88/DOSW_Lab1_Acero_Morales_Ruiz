@@ -161,8 +161,8 @@ Miguel Angel Acero Laverde
 ![Challenge evidence](images/A_7_challenge6.png)
 
 Daniel Santiago Morales Perdomo
-![Merge evidence 1](images/M_6_challenge6_Evidence1.png)
-![Merge evidence 2](images/M_6_challenge6_Evidence2.png)
+![Merge evidence 1](images/M_6_Challenge6_Evidence1.png)
+![Merge evidence 2](images/M_6_Challenge6_Evidence2.png)
 ### Description
 
 Briefly explain:
