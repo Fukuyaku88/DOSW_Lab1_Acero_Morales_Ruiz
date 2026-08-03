@@ -1,8 +1,6 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Challenge5 {
 
@@ -20,51 +18,45 @@ public class Challenge5 {
                 .collect(Collectors.toCollection(TreeSet::new));
     }
 
+    // Both Collections
+    private static Set<Integer> mergeCollections(Set<Integer> sA, Set<Integer> sB){
+        return Stream.concat(sA.stream(), sB.stream())
+                .collect(Collectors.toCollection(TreeSet::new));
+    }
+
     public static void main(String[] args) {
 
         HashSet<Integer> hash_set = new HashSet<Integer>();
-
         Random random = new Random();
         for (int i = 0; i < 11; i++) {
             hash_set.add(random.nextInt(0,401));
         } //Random integers in HashSet, made here out of Method A just for clean code
 
         TreeSet<Integer> tree_set = new TreeSet<Integer>();
-
         for (int i = 0; i < 11; i++) {
             tree_set.add(random.nextInt(0,401));
         } //Random integers in TreeSet, made here out of Method B just for clean code
 
+        System.out.println("Hash Set 1: " + hash_set);
+        System.out.println("Tree Set 1" + tree_set);
+        System.out.println("\n" + "Merged Collections 1: " + "\n");
+        mergeCollections(hash_set, tree_set).
+                forEach(val ->
+                        System.out.println("Number in the arena: " + val));
+
+
         HashSet<Integer> input_hash_set = new HashSet<>(
                 Arrays.asList(4, 9, 15, 7, 18, 21, 10, 5)
         );
-
         TreeSet<Integer> input_tree_set = new TreeSet<>(
                 Arrays.asList(12, 3, 25, 10, 7, 30, 18, 4)
         );
 
-        HashSet<Integer> answerInputHashSet = hashSetArmy(input_hash_set);
-        TreeSet<Integer> answerInputTreeSet = TreeSetArmy(input_tree_set);
-
-        HashSet<Integer> answerRandomHashSet = hashSetArmy(hash_set);
-        TreeSet<Integer> answerRandomTreeSet = TreeSetArmy(tree_set);
-
-        System.out.println("Input HashSet");
-        answerInputHashSet.forEach(num -> System.out.println("Number in the arena: " + num));
-
-        System.out.println("\n");
-
-        System.out.println("Input TreeSet");
-        answerInputTreeSet.forEach(num -> System.out.println("Number in the arena: " + num));
-
-        System.out.println("\n");
-
-        System.out.println("Random HashSet");
-        answerRandomHashSet.forEach(num -> System.out.println("Number in the arena: " + num));
-
-        System.out.println("\n");
-
-        System.out.println("Random TreeSet");
-        answerRandomTreeSet.forEach(num -> System.out.println("Number in the arena: " + num));
+        System.out.println("\n\nHash Set 2: " + hash_set);
+        System.out.println("Tree Set 2: " + tree_set);
+        System.out.println("\n" + "Merged Collections 2: " + "\n");
+        mergeCollections(hash_set, tree_set).
+                forEach(val ->
+                        System.out.println("Number in the arena: " + val));
     }
 }

@@ -117,20 +117,39 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Angel Acero Laverde
+![Challenge evidence](images/A_10_challenge5.png)
+
+Edgar Daniel Ruiz Patiño
+![Challenge evidence](images/R_10_challenge5.jpeg)
 
 ### Description
 
 Briefly explain:
 
-- What was implemented.
-B. Morales: As Student B added the method for TreeSet army, so I only use TreeSet, Stream and Collectors library, to transform the original TreeSet into a Stream, then filter the data by numbers not divisible by 5, and finally join it again with Collectors into another TreeSet, also added the random HashSet and TreeSet that the exercise requires, so I use the library Random for that.
-- How the work was divided.
-B. Morales: As Student B added the method for TreeSet army, and added the random HashSet and TreeSet that the exercise requires, so I use the library Random for that.
-- Which Git operations were used.
-Morales: I used checkout, pull origin, add ., commit, push and merge.
+- What was implemented. 
+  - Morales: As Student B added the method for TreeSet army, so I only use TreeSet, 
+    Stream and Collectors library, to transform the original TreeSet into a Stream, 
+    then filter the data by numbers not divisible by 5, and finally join it again 
+    with Collectors into another TreeSet, also added the random HashSet and TreeSet 
+    that the exercise requires, so I use the library Random for that.
+  - Miguel: I created the mergeCollections method which merge both different output 
+    collections given by other methods (two). And fix the test to prove different cases.
+- How the work was divided. 
+  - Ruiz: Created general branch and worked as Student A (HashMap method)
+  - Morales: As Student B added the method for TreeSet army, and added the random 
+    HashSet and TreeSet that the exercise requires, so I use the library Random 
+    for that.
+  - Miguel: Fished the challenge implementing merge method to join both solutions
+    and responsible to merge with develop branch.
+- Which Git operations were used. 
+  - Morales: I used checkout, pull origin, add ., commit, push and merge.
+  - Miguel: I used checkout, pull origin, add ., commit, push, merge, branch and status.
 - Which conflicts appeared.
+  - Conflicts related with challenge 5 lines (but respect of add new information)
 - How the conflicts were resolved.
+  - Only just to choose the changes tha we have to save and deny them not. And all of this 
+    to manual way.
 
 # Challenge 6— The Decision Machine
 
