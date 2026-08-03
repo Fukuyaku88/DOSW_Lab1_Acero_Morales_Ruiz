@@ -148,6 +148,12 @@ Ruiz Daniel evidence: $\newline$
 - HashTable
 ![Challenge evidence](images/R_7_challenge_4_Hashtable.png)
 
+Daniel Santiago Morales Perdomo
+![Merge Evidence 1](images/M_7_Challenge4_%20Evidence1.png)
+![Merge Evidence 2](images/M_7_%20Challenge4_%20Evidence2.png)
+![Merge Evidence 3](images/M_7_%20Challenge4_%20Evidence3.png)
+![Merge Evidence 4](images/M_7_%20Challenge4_%20Evidence4.png)
+
 ### Description
 
 Briefly explain:
