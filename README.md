@@ -246,5 +246,66 @@ Briefly explain:
 - Which conflicts appeared.
  Morales: There was a conflict in README.md, because Miguel deleted a part where someone added the questionnaire answers, and the PararellRace.java (challenge 2 file) because my the main challenge 6 branch, has the challenge 2 file empty, and in develop it was complete.
 - How the conflicts were resolved.
-
 Morales: For README.md I just accept the change to erase the answer of the questionnaire, and for the challenge 2 file, I just accept the change of add all the complete challenge.
+
+
+# Part 3 - Conceptual Questionnaire
+
+## 1. Team agreements
+- **What times will you meet?**  
+  From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
+- **What will your communication channels be?**  
+  We will use Microsoft Teams for meetings and WhatsApp for communication.
+- **How often will you meet?**  
+  At least three days a week, from Monday to Friday.
+- **If a conflict were to arise, how could you resolve it?**  
+  Since there are three members in our group, decisions will be made democratically.
+
+## 2. What is the difference between git merge and git rebase?
+GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
+GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
+
+## 3. What happens when two branches modify the same line of a file?
+Git will detect a merge conflict. The developer must choose which changes to keep or combine before completing the merge.
+
+## 4. How can you display the branch and merge history graphically in the terminal?
+Using the following command:
+```bash
+git log --graph --oneline --all
+```
+
+## 5. What is the difference between a commit and a push?
+- A commit creates a local snapshot (a save point with a description) of your staged changes inside your local Git repository. 
+- A push is the command used to upload those local commits from your computer to a remote repository (like GitHub/origin).
+
+## 6. What are git stash and git stash pop used for?
+- git stash is used to temporarily store your current uncommitted work out of the way, giving you a clean working directory to fix an emergency or switch branches without losing your changes. git stash pop restores those temporarily stored changes back to your working directory and removes them from the stash list so you can continue where you left off.
+
+## 7. What is the difference between HashMap and Hashtable?
+- HashMap allows one null key and multiple null values. It is not thread-safe (unsynchronized), which makes it faster and ideal for 
+  single-threaded applications. On the other hand, Hashtable does not allow null keys or null values (attempting to use them throws a 
+  NullPointerException). Unlike HashMap, Hashtable is thread-safe (synchronized), though it is mostly considered legacy code today.
+
+## 8. What advantages does Collectors.toMap() provide over a traditional loop?
+- Collectors.toMap() provides a clean, declarative way to transform stream elements directly into a Map. 
+- Compared to traditional loops, it integrates seamlessly with stream operations (like .filter() and .map()), 
+  reduces boilerplate code, and provides built-in merge functions (v1, v2) -> ... to easily handle duplicate key collisions.
+
+## 9. When using stream().map() on a list of objects, what type of operation is being performed?
+- It performs an operation of transformation over the elements of the list, for each element it applies the specified lambda function in map() argument, this function has to return a value with the same type of the value that is transforming, and finally, returns a new stream with the elements transformed by map.
+
+## 10. What does stream().filter() do, and what does it return?
+- Similar to the point 9, it performs an operation of evaluation over the elements of the list, for each element it applies the specified lambda function in filter() argument, where the expression inside the lambda function is boolean, if the expression is true, that element goes to the new stream that is finally returned, if not, the element is ignored and is not included in the new Stream, finally return the new stream with the elements filtered.
+
+## 11. Describe the steps required to create a new feature branch from develop.
+- Step 1 Switch to develop branch: git checkout develop
+- Step 2 Check the status of the branch: git status
+- Step 3 Update the develop branch if the status is not correct: git pull origin develop
+- Step 4 Create the new branch: git checkout -b nameofthebranch
+- Step 5 Push the new branch to the cloud: git push -u origin nameofthebranch
+
+## 12. What is the difference between git branch and git checkout -b?
+- "git branch -b nameofthebranch" creates a new branch but doesn´t move you to it, "git branch" list all the local branchs, "git checkout nameofthebranch" moves you to that branch, "git checkout -b nameofthebranch" create the branch and also moves you to that branch, "git checkout hashofthecommit -- nameofthefile" restores a file back into the specified commit, in a summary, git branch is usefull for list the current branchs and create a new branch without moving to it, and git checkout is usefull to move between branchs, create and move to new branchs, and manage files and branchs between commits.
+
+## 13. Why should new functionality be developed in feature/* branches instead of directly in main?
+- The main branch is used for stable, verified and totally functional versions of the project, which one that can be used by users with the security that has complete features and a less rate of bugs, while develop is used for review, testing, verify and join all the features and upgrades for the new version, and finally feature is used for developer teams or a developer that is focused in a specfic and unique feature, and is necessary to have an historial of that feature, to make a review or verification of that feature before it reaches develop, and is a workspace separated from others features.
