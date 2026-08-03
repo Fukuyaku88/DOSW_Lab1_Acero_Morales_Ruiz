@@ -47,6 +47,10 @@ Create a welcome message using Java functional programming.
 
 Briefly explain:
 
+- What was implemented. $\newline$ Ruiz: I created the test class, named it, and committed it.
+Morales: I added the class Student with it´s attributes and getters.
+- How the work was divided. $\newline$ There are 3 classes, one for each of one of the team members, Ruiz with the Challenge1 class, Morales with the Student class, and Acero with the class WelcomeMessage class.
+- Which Git operations were used. $\newline$ Ruiz: I used the add . and commit command, also i used the push command, Morales: I used checkout, add ., commit, push, pull origin and merge.
 - What was implemented. 
 1. Ruiz: I created the test class, named it, and committed it.
 2. Morales: I added the class Student with it´s attributes and getters.
@@ -68,23 +72,45 @@ develop branch.
 ## Challenge 2 — Parallel Commit Raise
 
 ### Evidence
-This challenge simulates parallel development, synchronization, and merge conflicts.
+### Evidence
+This challenge simulates parallel development, synchronization, and merge conflicts. $\newline$
 Ruiz Daniel evidence:
 - Fetch use
 ![Challenge evidence](images/R_2_Uso_del_fetch.png)
 - Third collision
 ![Challenge evidence](images/R_3_ThirdCollision_challenge_2.png)
 
+Miguel Acero evidence:
+![Challenge evidence](images/A_4_challenge2.png)
+![Challenge evidence](images/A_5_challenge2.png)
+![Challenge evidence](images/A_8_challenge2.png)
+![Challenge evidence](images/A_9_challenge2.png)
 
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Morales create the challenge main challenge branch, changed the name to the file, and added tha base class and elements to use.
+  - Miguel: I implemented the Lane Two when lamda-based function, returns the smallest and total size.
+  - Morales: Added the second lap to the challenge 2, and correct the output to show the final answer just for one list.
+  - Miguel: I created a single function that receives two list of numbers adn returns a 
+    Results object containing. For this reason, my last work here was review and integrate the final solution
+    with Results container and bothLists BiFunction.
 - How the work was divided.
+  - Acero: Lane Two, fix first collision.
+  - Morales: Created the base and tests class, Added all the second lap and also the correct output.
+  - Ruiz: Lane One, Third lab
 - Which Git operations were used.
+  - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
+  - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
+    (to upodate all cloude branches).
+  - Miguel: To merge with develop branch I used: ckeckout, pull origin, merge, add ., commit.
 - Which conflicts appeared.
+  - Miguel: CONFLICT (content): Merge conflict in Laboratory1/challenge2/ParallelRace.java when content
+    between laneOne and laneTwo crash in the same function (same name, different content)
 - How the conflicts were resolved.
+  - Miguel: Only just necessary merge manually changes into the same function.
 
 ## Challenge 3 — Mysterious Echo
 
@@ -135,65 +161,70 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Angel Acero Laverde
+![Challenge evidence](images/A_10_challenge5.png)
+
+Edgar Daniel Ruiz Patiño
+![Challenge evidence](images/R_10_challenge5.jpeg)
 
 ### Description
 
 Briefly explain:
 
-- What was implemented.
-- How the work was divided.
-- Which Git operations were used.
+- What was implemented. 
+  - Morales: As Student B added the method for TreeSet army, so I only use TreeSet, 
+    Stream and Collectors library, to transform the original TreeSet into a Stream, 
+    then filter the data by numbers not divisible by 5, and finally join it again 
+    with Collectors into another TreeSet, also added the random HashSet and TreeSet 
+    that the exercise requires, so I use the library Random for that.
+  - Miguel: I created the mergeCollections method which merge both different output 
+    collections given by other methods (two). And fix the test to prove different cases.
+- How the work was divided. 
+  - Ruiz: Created general branch and worked as Student A (HashMap method)
+  - Morales: As Student B added the method for TreeSet army, and added the random 
+    HashSet and TreeSet that the exercise requires, so I use the library Random 
+    for that.
+  - Miguel: Fished the challenge implementing merge method to join both solutions
+    and responsible to merge with develop branch.
+- Which Git operations were used. 
+  - Morales: I used checkout, pull origin, add ., commit, push and merge.
+  - Miguel: I used checkout, pull origin, add ., commit, push, merge, branch and status.
 - Which conflicts appeared.
+  - Conflicts related with challenge 5 lines (but respect of add new information)
 - How the conflicts were resolved.
+  - Only just to choose the changes tha we have to save and deny them not. And all of this 
+    to manual way.
 
 # Challenge 6— The Decision Machine
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Angel Acero Laverde
+![Challenge evidence](images/A_7_challenge6.png)
 
+Daniel Santiago Morales Perdomo
+![Merge evidence 1](images/M_6_Challenge6_Evidence1.png)
+![Merge evidence 2](images/M_6_Challenge6_Evidence2.png)
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Miguel: I implemented the executeCommandsA method of challenge 6.
+    In my case, we needed to create commands using switch statement.
+  - Morales: I implemented the executeCommandsB method of challenge 6, for that reason I use the lambda expressions inside a Map<String, Runnable>, to execute it according to the Key or in this case command.
+  - Morales: I complete the merge goal, so finally I doesn´t have to implement something new.
 - How the work was divided.
+  - Miguel created the Student A commands using switch statement and
+    printed the first fourth commands (simple way, invoking method).
+  - Morales: I implemented the executeCommandsB method of challenge 6, and also make a little improve to take input commands, and answer according to it, this to test the challenge several times.
+  - Morales: I complete the merge goal, so I decide that the Student B method was the more appropiate to make an based command program, because for switch we have to put more lines just to put a base command, otherwise with Map and lambda expressions, we just need to add a new value and key to the map.
 - Which Git operations were used.
+  - Miguel: I used some like ckeckout -b ..., pull origin, add ., push,
+    branch, status.
+  - Morales: ckeckout, pull origin, add ., commit, push, merge.
 - Which conflicts appeared.
+ Morales: There was a conflict in README.md, because Miguel deleted a part where someone added the questionnaire answers, and the PararellRace.java (challenge 2 file) because my the main challenge 6 branch, has the challenge 2 file empty, and in develop it was complete.
 - How the conflicts were resolved.
 
-
-# Part 3 - Conceptual Questionnaire
-
-## 1. Team agreements
-
-- **What times will you meet?**  
-  From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
-
-- **What will your communication channels be?**  
-  We will use Microsoft Teams for meetings and WhatsApp for communication.
-
-- **How often will you meet?**  
-  At least three days a week, from Monday to Friday.
-
-- **If a conflict were to arise, how could you resolve it?**  
-  Since there are three members in our group, decisions will be made democratically.
-
-## 2. What is the difference between git merge and git rebase?
-
-GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
-
-GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
-
-## 3. What happens when two branches modify the same line of a file?
-
-Git will detect a merge conflict. The developer must choose which changes to keep or combine before completing the merge.
-
-## 4. How can you display the branch and merge history graphically in the terminal?
-
-Using the following command:
-
-```bash
-git log --graph --oneline --all
-```
+Morales: For README.md I just accept the change to erase the answer of the questionnaire, and for the challenge 2 file, I just accept the change of add all the complete challenge.
