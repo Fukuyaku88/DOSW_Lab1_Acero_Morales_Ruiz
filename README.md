@@ -167,33 +167,41 @@ Briefly explain:
 # Part 3 - Conceptual Questionnaire
 
 ## 1. Team agreements
-
 - **What times will you meet?**  
   From Monday to Friday at 8:00 PM. If necessary, we can also meet on Saturday evenings.
-
 - **What will your communication channels be?**  
   We will use Microsoft Teams for meetings and WhatsApp for communication.
-
 - **How often will you meet?**  
   At least three days a week, from Monday to Friday.
-
 - **If a conflict were to arise, how could you resolve it?**  
   Since there are three members in our group, decisions will be made democratically.
 
 ## 2. What is the difference between git merge and git rebase?
-
 GIT MERGE: combines two branches by creating a new merge commit and preserving the history of both branches.
-
 GIT REBASE: moves the commits from one branch on top of another, creating a cleaner and more linear history.
 
 ## 3. What happens when two branches modify the same line of a file?
-
 Git will detect a merge conflict. The developer must choose which changes to keep or combine before completing the merge.
 
 ## 4. How can you display the branch and merge history graphically in the terminal?
-
 Using the following command:
-
 ```bash
 git log --graph --oneline --all
 ```
+
+## 5. What is the difference between a commit and a push?
+- A commit creates a local snapshot (a save point with a description) of your staged changes inside your local Git repository. 
+- A push is the command used to upload those local commits from your computer to a remote repository (like GitHub/origin).
+
+## 6. What are git stash and git stash pop used for?
+- git stash is used to temporarily store your current uncommitted work out of the way, giving you a clean working directory to fix an emergency or switch branches without losing your changes. git stash pop restores those temporarily stored changes back to your working directory and removes them from the stash list so you can continue where you left off.
+
+## 7. What is the difference between HashMap and Hashtable?
+- HashMap allows one null key and multiple null values. It is not thread-safe (unsynchronized), which makes it faster and ideal for 
+  single-threaded applications. On the other hand, Hashtable does not allow null keys or null values (attempting to use them throws a 
+  NullPointerException). Unlike HashMap, Hashtable is thread-safe (synchronized), though it is mostly considered legacy code today.
+
+## 8. What advantages does Collectors.toMap() provide over a traditional loop?
+- Collectors.toMap() provides a clean, declarative way to transform stream elements directly into a Map. 
+- Compared to traditional loops, it integrates seamlessly with stream operations (like .filter() and .map()), 
+  reduces boilerplate code, and provides built-in merge functions (v1, v2) -> ... to easily handle duplicate key collisions.
