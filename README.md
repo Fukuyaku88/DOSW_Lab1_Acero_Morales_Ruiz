@@ -31,6 +31,7 @@ Morales: I added the class Student with it´s attributes and getters.
 Miguel Acero evidence:
 ![Challenge evidence](images/A_4_challenge2.png)
 ![Challenge evidence](images/A_5_challenge2.png)
+![Challenge evidence](images/A_8_challenge2.png)
 
 ### Description
 
@@ -38,16 +39,20 @@ Briefly explain:
 
 - What was implemented.
   - Morales create the challenge main challenge branch, changed the name to the file, and added tha base class and elements to use.
-  - Miguel: I implemented the Lane Two when lamda-based function
-        returns the smallest and total size.
+  - Miguel: I implemented the Lane Two when lamda-based function, returns the smallest and total size.
   - Morales: Added the second lap to the challenge 2, and correct the output to show the final answer just for one list.
+  - Miguel: I created a single function that receives two list of numbers adn returns a 
+    Results object containing. For this reason, my last work here was review and integrate the final solution
+    with Results container and bothLists BiFunction.
 - How the work was divided.
-  - Daniel Ruiz was Lane One, Miguel Acero was Lane Two and Daniel Morales created the base and tests class.
-  - Morales: Added all the second lap and also the correct output.
+  - Acero: Lane Two, fix first collision.
+  - Morales: Created the base and tests class, Added all the second lap and also the correct output.
+  - Ruiz: Lane One, Third lab
 - Which Git operations were used.
   - Morales use checkout, pull origin, checkout -b, push -u origin, add ., commit, push origin.
   - Miguel: ckeckout, add ., pull origin, push, merge (with general challenge two branch), fetch 
     (to upodate all cloude branches).
+  - Miguel: To merge with develop branch I used: ckeckout, pull origin, merge, add ., commit.
 - Which conflicts appeared.
   - Miguel: CONFLICT (content): Merge conflict in Laboratory1/challenge2/ParallelRace.java when content
     between laneOne and laneTwo crash in the same function (same name, different content)

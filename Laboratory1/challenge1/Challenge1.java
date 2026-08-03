@@ -12,41 +12,39 @@ public class Challenge1 {
                 Student s3 = new Student("Daniel Ruiz",
                         28, "edgar.ruiz@mail.escuelaing.edu.co", 5);
 
-                WelcomeMessage wm = new WelcomeMessage(List.of(s1, s2, s3));
-                System.out.println(wm.getCompleteMessage());
+        }
+}
+
+class Student {
+        private String name;
+        private int age;
+        private String email;
+        private int semester;
+
+        public Student(String name, int age, String email, int semester) {
+                this.name = name;
+                this.age = age;
+                this.email = email;
+                this.semester = semester;
         }
 
-        public class Student {
-                private String name;
-                private int age;
-                private String email;
-                private int semester;
+        public String getName() {
+                return name;
+        }
 
-                public Student(String name, int age, String email, int semester) {
-                        this.name = name;
-                        this.age = age;
-                        this.email = email;
-                        this.semester = semester;
-                }
+        public int getAge() {
+                return age;
+        }
 
-                public String getName() {
-                        return name;
-                }
+        public String getEmail() {
+                return email;
+        }
 
-                public int getAge() {
-                        return age;
-                }
+        public int getSemester() {
+                return semester;
+        }
 
-                public String getEmail() {
-                        return email; 
-                }
-
-                public int getSemester() {
-                        return semester;
-                }
-                
-                public String getFormattedDetails() {
-                        return this.name + ", a " + this.semester + "th-semester student, " +this.age + " years old";
-                }
+        public String getFormattedDetails() {
+                return this.name + ", a " + this.semester + "th-semester student, " +this.age + " years old";
         }
 }
