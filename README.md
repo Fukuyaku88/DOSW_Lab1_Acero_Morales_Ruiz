@@ -133,14 +133,21 @@ Briefly explain:
 
 ### Evidence
 
-![Challenge evidence](images/challengeN.png)
+Miguel Angel Acero Laverde
+![Challenge evidence](images/A_7_challenge6.png)
 
 ### Description
 
 Briefly explain:
 
 - What was implemented.
+  - Miguel: I implemented the executeCommandsA method of challenge 6.
+    In my case, we needed to create commands using switch statement.
 - How the work was divided.
+  - Miguel created the Student A commands using switch statement and
+    printed the first fourth commands (simple way, invoking method). 
 - Which Git operations were used.
+  - Miguel: I used some like ckeckout -b ..., pull origin, add ., push,
+    branch, status.
 - Which conflicts appeared.
 - How the conflicts were resolved.
