@@ -124,8 +124,11 @@ Briefly explain:
 Briefly explain:
 
 - What was implemented.
+B. Morales: As Student B added the method for TreeSet army, so I only use TreeSet, Stream and Collectors library, to transform the original TreeSet into a Stream, then filter the data by numbers not divisible by 5, and finally join it again with Collectors into another TreeSet, also added the random HashSet and TreeSet that the exercise requires, so I use the library Random for that.
 - How the work was divided.
+B. Morales: As Student B added the method for TreeSet army, and added the random HashSet and TreeSet that the exercise requires, so I use the library Random for that.
 - Which Git operations were used.
+Morales: I used checkout, pull origin, add ., commit, push and merge.
 - Which conflicts appeared.
 - How the conflicts were resolved.
 
