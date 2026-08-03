@@ -52,10 +52,10 @@ public class Challenge5 {
                 Arrays.asList(12, 3, 25, 10, 7, 30, 18, 4)
         );
 
-        System.out.println("\n\nHash Set 2: " + hash_set);
-        System.out.println("Tree Set 2: " + tree_set);
+        System.out.println("\n\nHash Set 2: " + input_hash_set);
+        System.out.println("Tree Set 2: " + input_tree_set);
         System.out.println("\n" + "Merged Collections 2: " + "\n");
-        mergeCollections(hash_set, tree_set).
+        mergeCollections(input_hash_set, input_tree_set).
                 forEach(val ->
                         System.out.println("Number in the arena: " + val));
     }
